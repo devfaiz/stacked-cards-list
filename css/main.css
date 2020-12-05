@@ -1,0 +1,60 @@
+body {
+  background-color: #201A23;
+  color: #F0F7EE;
+  font-size: 16px; }
+  body .settings {
+    margin-top: 2rem;
+    margin-bottom: 2rem; }
+    body .settings label {
+      margin-right: 1rem; }
+  body .card-container {
+    display: flex;
+    height: 80%;
+    margin-top: auto; }
+    body .card-container .card-box {
+      background-color: #2E2532;
+      min-width: 300px;
+      min-height: 350px;
+      padding: 1.5rem;
+      border-radius: 15px;
+      box-shadow: -1rem 0 3rem #000;
+      transition: 0.2s; }
+      body .card-container .card-box:hover {
+        transform: translateY(-1rem);
+        cursor: pointer; }
+        body .card-container .card-box:hover ~ .card-box {
+          transform: translateX(140px);
+          transform: rotateX(45); }
+      body .card-container .card-box:not(:first-child) {
+        margin-left: -130px; }
+      body .card-container .card-box .card-header h2:hover {
+        background: linear-gradient(90deg, #ff8a00, #e52e71);
+        text-shadow: none;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent; }
+      body .card-container .card-box .card-footer {
+        margin-top: 2rem; }
+        body .card-container .card-box .card-footer p {
+          text-align: center; }
+          body .card-container .card-box .card-footer p:hover {
+            background: linear-gradient(90deg, #ff8a00, #e52e71);
+            text-shadow: none;
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent; }
+      body .card-container .card-box .card-body img {
+        height: 150px;
+        width: auto;
+        margin: auto;
+        display: block;
+        border-radius: 4px; }
+  body::-webkit-scrollbar {
+    width: 12px;
+    height: 12px; }
+  body::-webkit-scrollbar-thumb {
+    background: #201A23;
+    border-radius: 10px;
+    box-shadow: inset 2px 2px 2px rgba(255, 255, 255, 0.25), inset -2px -2px 2px rgba(0, 0, 0, 0.25); }
+  body::-webkit-scrollbar-track {
+    background: linear-gradient(90deg, #201c29, #201c29 1px, #17141d 0, #17141d); }

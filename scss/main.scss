@@ -1,0 +1,105 @@
+$bgcolor: #201A23;
+$textcolor: #F0F7EE;
+$fontsize: 16px;
+$cardColor: #2E2532;
+
+
+body {
+  background-color: $bgcolor;
+  color: $textcolor;
+  font-size: $fontsize;
+
+  .settings {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+
+    label {
+      margin-right: 1rem;
+    }
+  }
+
+  .card-container {
+    display: flex;
+    height: 80%;
+    margin-top: auto;
+
+    .card-box {
+      background-color: $cardColor;
+      min-width: 300px;
+      min-height: 350px;
+      padding: 1.5rem;
+      border-radius: 15px;
+      box-shadow: -1rem 0 3rem #000;
+      transition: 0.2s;
+
+      &:hover {
+        transform: translateY(-1rem);
+        cursor: pointer;
+
+        ~.card-box {
+          transform: translateX(140px);
+          transform: rotateX(45);
+        }
+      }
+
+      &:not(:first-child) {
+        margin-left: -130px;
+      }
+
+      .card-header {
+
+        h2 {
+          &:hover {
+            background: linear-gradient(90deg, #ff8a00, #e52e71);
+            text-shadow: none;
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+          }
+        }
+      }
+
+      .card-footer {
+        margin-top: 2rem;
+
+        p {
+          text-align: center;
+
+          &:hover {
+            background: linear-gradient(90deg, #ff8a00, #e52e71);
+            text-shadow: none;
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+          }
+        }
+      }
+
+      .card-body {
+        img {
+          height: 150px;
+          width: auto;
+          margin: auto;
+          display: block;
+          border-radius: 4px;
+        }
+      }
+
+    }
+  }
+
+  &::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: $bgcolor;
+    border-radius: 10px;
+    box-shadow: inset 2px 2px 2px hsla(0, 0%, 100%, 0.25), inset -2px -2px 2px rgba(0, 0, 0, 0.25);
+  }
+
+  &::-webkit-scrollbar-track {
+    background: linear-gradient(90deg, #201c29, #201c29 1px, #17141d 0, #17141d);
+  }
+}
