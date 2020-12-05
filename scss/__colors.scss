@@ -4,9 +4,9 @@ $fontSize: 16px;
 $cardColor: #2E2532;
 
 // sass variable map 
-$colors: (color-background: $bgcolor,
-  color-text: $textColor,
-  color-card: $cardColor);
+$colors: (background-color: $bgcolor,
+  font-color: $textColor,
+  card-color: $cardColor);
 
 // loop over each name, color
 :root {
@@ -16,4 +16,8 @@ $colors: (color-background: $bgcolor,
   $color in $colors {
     --#{$name}: #{$color};
   }
+}
+
+@function v($var) {
+  @return var(--#{$var});
 }

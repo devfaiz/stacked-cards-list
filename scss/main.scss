@@ -1,8 +1,8 @@
 @import '__colors.scss';
 
 body {
-  background-color: #{$bgcolor};
-  color: $textColor;
+  background-color: v(background-color);
+  color: v(font-color);
   font-size: $fontSize;
 
   .settings {
@@ -20,7 +20,7 @@ body {
     margin-top: auto;
 
     .card-box {
-      background-color: $cardColor;
+      background-color: v(card-color);
       min-width: 300px;
       min-height: 350px;
       padding: 1.5rem;
@@ -90,7 +90,7 @@ body {
   }
 
   &::-webkit-scrollbar-thumb {
-    background: $bgcolor;
+    background: v($bgcolor);
     border-radius: 10px;
     box-shadow: inset 2px 2px 2px hsla(0, 0%, 100%, 0.25), inset -2px -2px 2px rgba(0, 0, 0, 0.25);
   }
