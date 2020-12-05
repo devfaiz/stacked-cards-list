@@ -18,7 +18,7 @@ $colors: (backgroundColor: hexToRgbaConverter(#201A23),
   fontColor: hexToRgbaConverter(#F0F7EE),
   cardBackgroundColor: hexToRgbaConverter(#2E2532),
 );
-$bgColor: renderColorName(backgroundColor);
+$backgroundColor: renderColorName(backgroundColor);
 $fontColor: renderColorName(fontColor);
 $cardBackgroundColor: renderColorName(cardBackgroundColor);
 
