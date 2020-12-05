@@ -1,3 +1,8 @@
+:root {
+  --color-background: #201A23;
+  --color-text: #F0F7EE;
+  --color-card: #2E2532; }
+
 body {
   background-color: #201A23;
   color: #F0F7EE;

@@ -1,13 +1,9 @@
-$bgcolor: #201A23;
-$textcolor: #F0F7EE;
-$fontsize: 16px;
-$cardColor: #2E2532;
-
+@import '__colors.scss';
 
 body {
-  background-color: $bgcolor;
-  color: $textcolor;
-  font-size: $fontsize;
+  background-color: #{$bgcolor};
+  color: $textColor;
+  font-size: $fontSize;
 
   .settings {
     margin-top: 2rem;

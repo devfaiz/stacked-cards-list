@@ -1,0 +1,19 @@
+$bgcolor: #201A23;
+$textColor: #F0F7EE;
+$fontSize: 16px;
+$cardColor: #2E2532;
+
+// sass variable map 
+$colors: (color-background: $bgcolor,
+  color-text: $textColor,
+  color-card: $cardColor);
+
+// loop over each name, color
+:root {
+
+  // each item in color map
+  @each $name,
+  $color in $colors {
+    --#{$name}: #{$color};
+  }
+}
