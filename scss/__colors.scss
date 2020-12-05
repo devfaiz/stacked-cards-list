@@ -1,20 +1,32 @@
-$bgcolor: #201A23;
-$textColor: #F0F7EE;
 $fontSize: 16px;
-$cardColor: #2E2532;
+
+/* Utility functions */
+@function hexToRgbaConverter($hex_color) {
+  @return '#{red($hex_color)}, #{green($hex_color)}, #{blue($hex_color)}';
+}
+
+@function renderColorName($color-name) {
+  @return var(--color-#{$color-name});
+}
+
+@function rgbToStringConverter($rgb_color) {
+  @return 'rgb(#{unquote($rgb_color)})';
+}
 
 // sass variable map 
-$colors: (background-color: $bgcolor,
-  font-color: $textColor,
-  card-color: $cardColor);
+$colors: (backgroundColor: hexToRgbaConverter(#201A23),
+  fontColor: hexToRgbaConverter(#F0F7EE),
+  cardBackgroundColor: hexToRgbaConverter(#2E2532),
+);
+$bgColor: renderColorName(backgroundColor);
+$fontColor: renderColorName(fontColor);
+$cardBackgroundColor: renderColorName(cardBackgroundColor);
 
-// loop over each name, color
 :root {
 
-  // each item in color map
   @each $name,
   $color in $colors {
-    --#{$name}: #{$color};
+    --color-#{$name}: #{rgbToStringConverter($color)};
   }
 }
 

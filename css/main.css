@@ -1,11 +1,12 @@
+/* Utility functions */
 :root {
-  --background-color: #201A23;
-  --font-color: #F0F7EE;
-  --card-color: #2E2532; }
+  --color-backgroundColor: rgb(32, 26, 35);
+  --color-fontColor: rgb(240, 247, 238);
+  --color-cardBackgroundColor: rgb(46, 37, 50); }
 
 body {
-  background-color: var(--background-color);
-  color: var(--font-color);
+  background-color: var(--color-backgroundColor);
+  color: var(--color-fontColor);
   font-size: 16px; }
   body .settings {
     margin-top: 2rem;
@@ -17,7 +18,7 @@ body {
     height: 80%;
     margin-top: auto; }
     body .card-container .card-box {
-      background-color: var(--card-color);
+      background-color: var(--color-cardBackgroundColor);
       min-width: 300px;
       min-height: 350px;
       padding: 1.5rem;
@@ -58,7 +59,7 @@ body {
     width: 12px;
     height: 12px; }
   body::-webkit-scrollbar-thumb {
-    background: var(--#201A23);
+    background: var(--color-backgroundColor);
     border-radius: 10px;
     box-shadow: inset 2px 2px 2px rgba(255, 255, 255, 0.25), inset -2px -2px 2px rgba(0, 0, 0, 0.25); }
   body::-webkit-scrollbar-track {
