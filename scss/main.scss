@@ -1,11 +1,9 @@
 @import '__colors.scss';
 
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital@0;1&display=swap');
-
 body {
   background-color: $backgroundColor;
   color: $fontColor;
-  font-family: 'IBM Plex Serif', serif;
+  font-family: 'Courier New', Courier, monospace;
   font-size: $fontSize;
 
   .settings {

@@ -1,5 +1,4 @@
 /* Utility functions */
-@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital@0;1&display=swap");
 :root {
   --color-backgroundColor: rgb(32, 26, 35);
   --color-fontColor: rgb(240, 247, 238);
@@ -8,7 +7,7 @@
 body {
   background-color: var(--color-backgroundColor);
   color: var(--color-fontColor);
-  font-family: 'IBM Plex Serif', serif;
+  font-family: 'Courier New', Courier, monospace;
   font-size: 16px; }
   body .settings {
     margin-top: 2rem;
